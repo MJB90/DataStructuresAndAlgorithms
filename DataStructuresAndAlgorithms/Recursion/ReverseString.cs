@@ -8,21 +8,21 @@ namespace DataStructuresAndAlgorithms.Recursion
 {
     class ReverseString
     {
-        public static string RReverse(string str, int i)
+        public static string RReverse(string str)
         {
-            if (i == str.Length)
+            if (str == "")
             {
                 return "";
             }
             else
             {
-                return RReverse(str,i+1) + str[i];
+                return RReverse(str.Substring(1)) + str[0];
             }
         }
 
         public static void Reverse(string str)
         {
-            Console.WriteLine("'{0}' reversed is '{1}'", str, RReverse(str, 0));
+            Console.WriteLine("'{0}' reversed is '{1}'", str, RReverse(str));
         }
 
         static void Main()

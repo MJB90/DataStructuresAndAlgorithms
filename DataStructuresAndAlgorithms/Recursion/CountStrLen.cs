@@ -8,21 +8,21 @@ namespace DataStructuresAndAlgorithms.Recursion
 {
     class CountStrLen
     {
-        public static int RCount(string str,int i)
+        public static int RCount(string str)
         {
-            if (i == str.Length)
+            if (str=="")
             {
                 return 0;
             }
             else
             {
-                return 1 + RCount(str, i + 1);
+                return 1 + RCount(str.Substring(1));
             }
         }
 
         public static void Count(string str)
         {
-            Console.WriteLine("'{0}' has a length of {1}", str, RCount(str,0));
+            Console.WriteLine("'{0}' has a length of {1}", str, RCount(str));
         }
 
         static void Main()
