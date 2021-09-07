@@ -28,6 +28,8 @@ namespace DataStructuresAndAlgorithms.Dictionary
         {
             int[] a = { 1, 3, 2, 10, 4, 9, 7, 15, 6, 5 };
 
+            List<int>[] hastable = new List<int>[3];
+
             PrintPairs(a);
         }
     }

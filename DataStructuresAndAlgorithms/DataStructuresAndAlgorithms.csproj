@@ -56,6 +56,7 @@
     <Compile Include="Recursion\CountStrLen.cs" />
     <Compile Include="Recursion\ReverseString.cs" />
     <Compile Include="Stacks\ValidateArithmeticInput.cs" />
+    <Compile Include="TicTacToe\TicTacToe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
